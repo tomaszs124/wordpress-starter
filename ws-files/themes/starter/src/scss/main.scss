@@ -1,0 +1,28 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1260px,
+  xxl: 1368px,
+  xxxl: 1600px,
+  fullhd: 1920px,
+);
+@import "vendor/bootstrap";
+
+@import "base/variables";
+
+@import "utilities/mixins";
+@import "utilities/func";
+
+@import "base/global";
+@import "base/typography";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/wrapper";
+
+@import "components/btn";
+@import "components/lazy-img";
+
+@import "pages/home";

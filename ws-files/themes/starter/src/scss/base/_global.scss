@@ -1,0 +1,98 @@
+// @font-face {
+//   font-family: "Galatea";
+//   font-weight: 500;
+//   src: url("../../fonts/Galatea.eot"); /* IE9 Compat Modes */
+//   src: url("../fonts/Galatea.eot?#iefix") format("embedded-opentype"),
+//     /* IE6-IE8 */ url("../fonts/Galatea.woff2") format("woff2"),
+//     /* Super Modern Browsers */ url("../fonts/Galatea.woff") format("woff"),
+//     /* Pretty Modern Browsers */ url("../fonts/Galatea.ttf") format("truetype"),
+//     /* Safari, Android, iOS */ url("../fonts/Galatea.svg#svgFontName")
+//       format("svg"); /* Legacy iOS */
+// }
+
+// @include font-face("Galatea", "../fonts/galatea-regular-webfont", 400);
+// @include font-face("Galatea", "../fonts/galatea-medium-webfont", 500);
+// @include font-face("Galatea", "../fonts/galatea-bold-webfont", 700);
+// @include font-face("Galatea", "../fonts/galatea-thin-webfont", 100);
+
+html {
+  --vh: 1vh;
+  height: 100%;
+  @media (min-width: 1920px) {
+    font-size: 0.9vw;
+  }
+}
+
+body {
+  font-family: $font-family;
+  font-size: 0.875rem;
+  color: $text-color;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  line-height: 1.66;
+
+  @media only screen and(min-width: 2500px) and (-webkit-min-device-pixel-ratio: 2) {
+    font-size: 0.875rem;
+  }
+
+  &.is-mobile {
+    height: auto;
+  }
+
+  &:not(.is-mobile) {
+    // overflow: hidden;
+  }
+
+  &.menu-opened {
+    @media (max-width: $menu-bp-max) {
+      overflow: hidden;
+    }
+  }
+
+  &.popup-opened {
+    // overflow: hidden;
+  }
+
+  // &::-webkit-scrollbar {
+  //   width: 0;
+  //   height: 0;
+  // }
+}
+
+.site {
+  overflow-x: hidden;
+}
+
+::selection {
+  color: $lead;
+  background-color: $lead-alt;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.wp-block-image {
+  margin: 4rem 0;
+
+  @include media-breakpoint-up(lg) {
+    margin: 8rem 0;
+  }
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+iframe {
+  border: 0;
+}

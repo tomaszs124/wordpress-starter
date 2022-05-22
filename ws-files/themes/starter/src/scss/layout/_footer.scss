@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  .voila-logo {
+    width: rem(80px);
+
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}

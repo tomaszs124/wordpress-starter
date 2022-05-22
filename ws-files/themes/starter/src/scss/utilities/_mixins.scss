@@ -1,0 +1,27 @@
+@mixin font-face($font-family, $url, $font-weight) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('#{$url}.woff2') format('woff2');
+    font-weight: $font-weight;
+    font-style: normal;
+  }
+}
+
+@mixin grid-side-padding($size: '') {
+  padding-left: 4vw;
+  padding-right: 4vw;
+
+  @if $size== 'xl' {
+    @include media-breakpoint-up(lg) {
+      padding-left: 8vw;
+      padding-right: 8vw;
+    }
+  }
+
+  @if $size== 'sm' {
+    @include media-breakpoint-up(lg) {
+      padding-left: 8vw;
+      padding-right: 8vw;
+    }
+  }
+}

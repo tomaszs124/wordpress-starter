@@ -1,0 +1,99 @@
+.h1 {
+  font: $serif-italic-regular;
+  font-size: 1.625rem;
+  font-style: normal;
+  line-height: 1.3;
+  font-weight: normal;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 2rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 2.625rem;
+  }
+}
+
+.h2 {
+  font: $serif;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 0 0 1.2em;
+  display: block;
+  @include media-breakpoint-up(md) {
+    font-size: 1.875rem;
+  }
+}
+
+.h3 {
+  font: $serif;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 0 0 1.2em;
+  display: block;
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+}
+
+.h4 {
+  font: $serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 1.2em;
+  display: block;
+  @include media-breakpoint-up(md) {
+    font-size: 1.125rem;
+  }
+}
+
+.link {
+  font-weight: $fw-semibold;
+  text-transform: uppercase;
+  line-height: 1.23;
+  letter-spacing: 0.1em;
+  outline: 0;
+  background: none;
+  border: 0;
+  font-size: 0.625rem;
+  transition: all 0.25s ease-in-out;
+
+  @include media-breakpoint-up(md) {
+    font-size: 0.8125rem;
+  }
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}

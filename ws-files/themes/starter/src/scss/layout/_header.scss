@@ -1,0 +1,43 @@
+.header {
+  z-index: 90;
+  position: relative;
+
+  body:not(.menu-opened) & {
+    @media (max-width: $menu-bp-max) {
+      // overflow: hidden;
+    }
+  }
+  .header__nav {
+    @media (max-width: $menu-bp-max) {
+      // display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background-color: #fff;
+      z-index: 90;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media (min-width: $menu-bp) {
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    &.active {
+      transform: translateX(0%);
+    }
+
+    @for $i from 0 to 5 {
+      &[data-active='#{$i}'] {
+        .wrapper > * {
+          transition: all 0.3s ease-in-out;
+          transform: translateX(calc(-100% * #{$i} - 0.875rem * #{$i}));
+        }
+      }
+    }
+  }
+}

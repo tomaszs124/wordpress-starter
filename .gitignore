@@ -1,0 +1,15 @@
+ws-files/uploads/
+ws-files/themes/*/**/webpack/config.json
+ws-files/cache/
+ws-files/advanced-cache.php
+ws-files/autoptimize_404_handler.php
+ws-files/wp-cache-config.php
+node_modules/
+wp-config.php
+ws-db/ws-db.php
+build/
+*.log
+.idea
+.vscode
+.atom
+.DS_Store

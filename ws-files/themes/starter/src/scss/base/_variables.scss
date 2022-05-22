@@ -1,0 +1,45 @@
+$font-size: 16px;
+
+$fw-thin: 100;
+$fw-extraLight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+$quicksand: 'Source Sans Pro', sans-serif;
+$noto: 'Noto Serif', serif;
+
+$serif: italic 400 1rem $noto;
+$serif-italic-regular: italic $fw-regular 1rem $noto;
+$serif-italic-semibold: italic $fw-semibold 1rem $noto;
+
+$serif-normal-regular: normal $fw-regular 1rem $noto;
+$serif-normal-semibold: italic $fw-semibold 1rem $noto;
+$sans-serif: $quicksand;
+
+$font-primary: $quicksand;
+$font-family: $font-primary;
+
+$header-height-mobile: 88px;
+$header-height-big: 120px;
+
+$c-gray-dark: #565863;
+$c-gray-light: #c3c4c8;
+$c-gray: #939499;
+$c-light: #f7f7f5;
+$c-beige: #ddcfc2;
+$c-brown-light: #96846f;
+$c-brown-dark: #6b5549;
+$c-dark: #191c1e;
+$black: #000;
+
+$text-color: $c-dark;
+$lead: $c-brown-light;
+$lead-alt: $c-dark;
+
+$menu-bp: 992px;
+$menu-bp-max: $menu-bp - 1;
+
+$logo-width: 15.625rem;
