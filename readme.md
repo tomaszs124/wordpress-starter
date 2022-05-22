@@ -1,12 +1,16 @@
 # Description
 
-Wordpress starter theme with Prettier, ESLint, Babel, SCSS and JS Compilation, image optimization
+Wordpress starter theme:
 
+- 7-1 SCSS pattern
+- JS modules
+- basic WP plugins
+- Prettier, ESLint, Babel, Webpack
 
 ## How to start
 
 1. Clone repo
-2. Create database
+2. Create local database
 3. Copy/rename ```wp-config-ws-sample.php``` to ```wp-config```
 3. Copy/rename ```ws-db/ws-db-sample.php``` to ```ws-db.php``` and enter database data
 4. Copy/rename ```webpack/config-sample.json``` to ```config.json``` and change url
