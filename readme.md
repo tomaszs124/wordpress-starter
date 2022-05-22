@@ -1,9 +1,9 @@
-# Opis
+# Description
 
-WordPress Starter Theme
+Wordpress starter theme with Prettier, ESLint, Babel, SCSS and JS Compilation, image optimization
 
 
-## Jak zacząć
+## How to start
 
 1. Clone repo
 2. Create database
